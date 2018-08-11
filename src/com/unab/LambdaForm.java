@@ -50,6 +50,7 @@ public class LambdaForm {
         lblResultado4.setText(funcion.apply("Hola"));
         lblResultado5.setText(funcionMultiple.apply("¿Como estas?", "¿Pastor?"));
         lblResultado6.setText(funcionSinArgumentos.get().toString());
+        System.out.println("Mod");
         Predicate<Integer> predicado = numero -> numero > 16;
         BiPredicate<Integer, Integer> predicados = (numero1, numero2) -> numero1 > numero2;
         lblResultado7.setText(String.valueOf(predicado.test(15)));
